@@ -223,6 +223,7 @@ def do_setup(package_data):
                 "fairseq-validate = fairseq_cli.validate:cli_main",
             ],
         },
+        scripts=["scripts/fairseq-cett"],
         cmdclass=cmdclass,
         zip_safe=False,
     )
