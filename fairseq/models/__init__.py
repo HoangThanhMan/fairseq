@@ -28,6 +28,7 @@ from .fairseq_model import (
     FairseqModel,
     FairseqMultiModel,
 )
+from .ffn_cett import CETTExtractor, FFNIntervention, FFNInterventionManager
 
 
 MODEL_REGISTRY = {}
@@ -42,10 +43,13 @@ __all__ = [
     "BaseFairseqModel",
     "CompositeEncoder",
     "DistributedFairseqModel",
+    "CETTExtractor",
     "FairseqDecoder",
     "FairseqEncoder",
     "FairseqEncoderDecoderModel",
     "FairseqEncoderModel",
+    "FFNIntervention",
+    "FFNInterventionManager",
     "FairseqIncrementalDecoder",
     "FairseqLanguageModel",
     "FairseqModel",

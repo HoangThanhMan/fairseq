@@ -11,6 +11,7 @@ Fairseq provides several command-line tools for training and evaluating models:
 - :ref:`fairseq-interactive`: Translate raw text with a trained model
 - :ref:`fairseq-score`: BLEU scoring of generated translations against reference translations
 - :ref:`fairseq-eval-lm`: Language model evaluation
+- :ref:`fairseq-cett`: FFN intervention and CETT extraction for decoder layers
 
 
 .. _fairseq-preprocess:
@@ -83,3 +84,15 @@ fairseq-eval-lm
         :module: fairseq.options
         :func: get_eval_lm_parser
         :prog: fairseq-eval-lm
+
+
+.. _fairseq-cett:
+
+fairseq-cett
+~~~~~~~~~~~~
+.. automodule:: fairseq_cli.cett
+
+    .. argparse::
+        :module: fairseq_cli.cett
+        :func: get_parser
+        :prog: fairseq-cett

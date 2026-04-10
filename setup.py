@@ -212,6 +212,7 @@ def do_setup(package_data):
         test_suite="tests",
         entry_points={
             "console_scripts": [
+                "fairseq-cett = fairseq_cli.cett:cli_main",
                 "fairseq-eval-lm = fairseq_cli.eval_lm:cli_main",
                 "fairseq-generate = fairseq_cli.generate:cli_main",
                 "fairseq-hydra-train = fairseq_cli.hydra_train:cli_main",
